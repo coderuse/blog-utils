@@ -1,0 +1,35 @@
+@import "bourbon/bourbon";
+
+body {
+  font-family: $helvetica;
+}
+
+.coderuse-editor {
+  margin: 5px 0;
+  display: block;
+  position: relative;
+  .edit-box {
+    margin: 2px 0;
+    -moz-appearance: textfield-multiline;
+    -webkit-appearance: textarea;
+    height: 120px;
+    overflow: auto;
+    padding: 10px;
+    resize: both;
+    width: 100%;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    @include transition(border-color ease-in-out .15s, box-shadow ease-in-out .15s);
+    &:focus {
+      border-color: #66afe9;
+      outline: 0;
+      -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
+              box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
+    }
+
+  }
+}

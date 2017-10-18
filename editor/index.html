@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CodeRuse::Blog Utils Editor</title>
+
+  <link rel="stylesheet" href="/uiLibs/bootstrap/dist/css/bootstrap.min.css">
+  <!-- <link rel="stylesheet" href="/uiLibs/bootstrap/dist/css/bootstrap-theme.min.css"> -->
+
+  <link rel="stylesheet" href="app.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-offset-2 col-lg-8 col-md-offset-3 col md-6">
+
+        <!-- Start Editor -->
+        <div class="coderuse-editor">
+          <div class="row toolbar">
+            <div class="btn-group" role="group">
+              <button type="button" class="btn btn-default action" data-intent="bold">
+                <span class="glyphicon glyphicon-bold"></span>
+              </button>
+              <button type="button" class="btn btn-default action" data-intent="italic">
+                <span class="glyphicon glyphicon-italic"></span>
+              </button>
+              <button type="button" class="btn btn-default action" data-intent="left">
+                <span class="glyphicon glyphicon-align-left"></span>
+              </button>
+              <button type="button" class="btn btn-default action" data-intent="center">
+                <span class="glyphicon glyphicon-align-center"></span>
+              </button>
+              <button type="button" class="btn btn-default action" data-intent="right">
+                <span class="glyphicon glyphicon-align-right"></span>
+              </button>
+              <button type="button" class="btn btn-default action" data-intent="image">
+                <span class="glyphicon glyphicon-picture"></span>
+              </button>
+              <button type="button" class="btn btn-default action" data-intent="text-size">
+                <span class="glyphicon glyphicon-text-size"></span>
+              </button>
+              <button type="button" class="btn btn-default action" data-intent="superscript">
+                <span class="glyphicon glyphicon-superscript"></span>
+              </button>
+              <button type="button" class="btn btn-default action" data-intent="subscript">
+                <span class="glyphicon glyphicon-subscript"></span>
+              </button>
+            </div>
+          </div>
+          <div class="row">
+            <div class="edit-box" contenteditable="true">
+
+            </div>
+          </div>
+        </div>
+        <!-- End Editor -->
+
+      </div>
+    </div>
+  </div>
+
+  <script src="/uiLibs/jquery/dist/jquery.min.js"></script>
+  <script src="/uiLibs/rangy/rangy-core.min.js"></script>
+  <script src="/uiLibs/rangy/rangy-classapplier.min.js"></script>
+  <script src="script/plugins/toolbar.js"></script>
+  <script src="script/app.js"></script>
+</body>
+
+</html>
